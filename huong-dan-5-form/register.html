@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="register.js"></script>
+  </head>
+  <body>
+    <form
+      action="https://mercury.swin.edu.au/it000000/formtest.php"
+      method="post"
+    >
+      <fieldset>
+        <!-- chú thích -->
+        <legend>Personal Infomation</legend>
+        <p>
+          <label for="name">Enter your first name: </label>
+          <input type="text" name="name" id="name" />
+        </p>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Select Courses</legend>
+        <label for="logicmath">Logic Math</label>
+        <input type="checkbox" name="logicmath" id="logicmath" />
+      </fieldset>
+      <input type="submit" value="Register Now" />
+    </form>
+  </body>
+</html>
