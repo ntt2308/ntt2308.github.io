@@ -7,10 +7,7 @@
     <script src="register.js"></script>
   </head>
   <body>
-    <form
-      action="https://mercury.swin.edu.au/it000000/formtest.php"
-      method="post"
-    >
+    <form id="register_form" action="confirm.html" method="post">
       <fieldset>
         <!-- chú thích -->
         <legend>Personal Infomation</legend>
@@ -18,15 +15,79 @@
           <label for="name">Enter your first name: </label>
           <input type="text" name="name" id="name" />
         </p>
+        <p>
+          <label for="lastname">Enter your last name: </label>
+          <input type="text" id="lastname" name="lastname" />
+        </p>
+        <p>
+          <label for="email">Enter your email: </label>
+          <input type="text" id="email" name="email" />
+        </p>
+        <p>
+          <label for="phone_number">Enter your phone Number: </label>
+          <input type="text" id="phone_number" name="phone_number" />
+        </p>
+        <p>
+          <label for="age">Enter your age: </label>
+          <input type="text" id="age" name="age" />
+        </p>
       </fieldset>
       <br />
-
+      <fieldset>
+        <legend>Select your accupation</legend>
+        <label for="highschool">HighSchool</label>
+        <input type="radio" name="occupation" id="highschool" /> <br />
+        <label for="university">University</label>
+        <input type="radio" name="occupation" id="university" /> <br />
+        <label for="working">Working</label>
+        <input type="radio" name="occupation" id="working" /> <br />
+        <label for="retired">Retired</label>
+        <input type="radio" id="retired" name="occupation" /> <br />
+      </fieldset>
+      <br />
       <fieldset>
         <legend>Select Courses</legend>
-        <label for="logicmath">Logic Math</label>
-        <input type="checkbox" name="logicmath" id="logicmath" />
+        <label for="logicmath">Logic Math - 449k </label>
+        <input
+          type="checkbox"
+          name="logicmath"
+          id="logicmath"
+          value="logicmath"
+        /><br />
+
+        <label for="python">Python Basic - 799k</label>
+        <input type="checkbox" name="python" id="python" value="python" /><br />
+
+        <label for="web">Web Basic - 749k</label>
+        <input type="checkbox" name="web" id="web" value="web" /><br />
+
+        <label for="game">Game Python - 149k</label>
+        <input type="checkbox" name="game" id="game" value="game" /><br />
+
+        <label for="datascience">Data Science Basic - 249k</label>
+        <input
+          type="checkbox"
+          name="datascience"
+          id="datascience"
+          value="datascience"
+        /><br />
+
+        <label for="ai">AI Basic - 499k</label>
+        <input type="checkbox" name="ai" id="ai" value="ai" /><br />
       </fieldset>
+
+      <br />
+      <label for="payment">Payment method</label>
+      <select name="payment" id="payment">
+        <option value="none">Please select</option>
+        <option value="paypal">Paypal</option>
+        <option value="creditcard">Credit Card</option>
+      </select>
+
+      <br />
+      <br />
       <input type="submit" value="Register Now" />
+      <input type="reset" value="Reset" />
     </form>
   </body>
 </html>
